@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        img {
+            border: 3px solid red;
+        }
+
+        p{color:blue;}
+
+        .classa {
+            color: gray;
+            font-weight: bold;
+        }
+
+        .container1 {
+            border: solid;
+        }
+
+        #paragraaf1 {
+            text-decoration: line-through;
+        }
+    </style>
+
+    <script>
+        alert('Test');
+        var a = 6;
+        alert(a);
+
+        const c = 46;
+        //c = 23;
+        alert(c);
+
+        function test(ev) {
+            alert('In function');
+            alert(ev);
+
+        }
+
+        
+
+        // test();
+        
+    </script>
+</head>
+<body id="mijnbody">
+    
+    <input type="text" id="invoer1">
+    <button onclick="test(event)">Click me</button>
+    <button onclick="document.getElementById('mijnbody').innerHTML = ''">Maak leeg</button>
+
+    <h1 style="color:green;" class="classa">Dit is mijn eerste pagina</h1>
+
+    <span class="classa">Dit is een span</span> <span class="classa classb classc">Class tekst</span>
+    
+    <p id="paragraaf1">Dit is een paragraaf</p>
+
+    <div class="container1">
+        <span style="color: red; font-size: 540%;">Tekst in div</span>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Naam</th>
+                <th>Leeftijd</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Henk</td>
+                <td>23</td>
+            </tr>
+
+            <tr>
+                <td>Magreet</td>
+                <td>32</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <img style="border: 8px dashed green;" src="https://www.zdnet.com/a/img/resize/0a6b0be2f543ddbf313fc83a706b807b77c3c202/2021/07/19/8a337c80-5ed6-43a1-98fb-b981d420890f/programming-languages-shutterstock-1680857539.jpg?auto=webp&fit=crop&height=900&width=1200">
+
+    <iframe width="420" height="315"
+    src="https://www.youtube.com/embed/tgbNymZ7vqY">
+    </iframe> 
+
+
+
+    <script>
+        const invoer1Element = document.getElementById('invoer1');
+        console.log(invoer1Element.value);
+
+        test();
+    </script>
+
+</body>
+</html>
